@@ -2,11 +2,12 @@ using System;
 
 namespace Catalog.Api.Entities
 {
-  public record Item
+  public class Item
   {
-    public Guid Id { get; init; }
-    public String Name { get; init; }
-    public decimal Price { get; init; }
-    public DateTimeOffset CreatedDate { get; init; }
+    public Guid Id { get; set; }
+    public String Name { get; set; }
+    public string Description { get; set; }
+    public decimal Price { get; set; }
+    public DateTimeOffset CreatedDate { get; set; }
   }
 }
